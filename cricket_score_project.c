@@ -6,3 +6,11 @@ struct batsman
    float str;
  
 }pl1[100],pl3;
+
+struct bowler
+{
+   char name[25];
+   int runsgv,wkttkn,overs;
+   int max_w;
+   float econ;
+}pl2[100],pl4;
