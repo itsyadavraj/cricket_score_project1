@@ -61,10 +61,12 @@ void BowlerDetail(int n) {
 		printf("Enter the overs bowled by the bowler%d:\n", i + 1);
 		scanf("%d", &pl2[i].overs);
 
-
-		printf("Enter the wickets taken by the bowler%d\n", i + 1);
-		scanf("%d", &pl2[i].wkttkn);
-
+      int temp;
+      do {
+         printf("Enter the wickets taken by the bowler%d\n", i + 1);
+		   scanf("%d", &temp);
+      }while (temp > 10 || temp < 0);
+      pl2[i].wkttkn = temp;
 	}
 }
 
